@@ -1,11 +1,12 @@
+import java.util.SplittableRandom;
 
 public class CeaserCipher {
     public static String isEncrypt(String text, int shift) {
 //        String output = new String();
         String encryptedOutput = "";
 
-        for (int i = 0; i < text.length(); i++) {
-            char ch = text.charAt(i);
+        for (int i = 0; i < text.length(); i++) {        //
+            char ch = text.charAt(i);              //
             if (Character.isLetter(ch)) {
                 char x = (char) (ch + shift);
 
@@ -18,5 +19,24 @@ public class CeaserCipher {
             }
         }
         return encryptedOutput;
+    }
+
+
+    public static String runDecrypt(String text, int shift) {
+        String decryptedOutput = "";
+        for (int i = 0; i < text.length(); i++) {
+            char ch = text.charAt(i);              //
+            if (Character.isLetter(ch)) {
+                char x = (char) (ch - shift);
+
+                if (x < 'a') {
+                    decryptedOutput += (char) (ch + (26 - shift));
+
+                } else {
+                    decryptedOutput += x;
+                }
+            }
+        }
+        return decryptedOutput;
     }
 }
