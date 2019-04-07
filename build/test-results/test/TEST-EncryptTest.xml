@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="EncryptTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2019-04-06T21:05:49" hostname="abbiemurugi-Lenovo-V110-15ISK" time="0.004">
+<testsuite name="EncryptTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2019-04-07T14:42:18" hostname="abbiemurugi-Lenovo-V110-15ISK" time="0.004">
   <properties/>
   <testcase name="isEncrypt_ableTo_encrypt" classname="EncryptTest" time="0.004">
-    <failure message="org.junit.ComparisonFailure: expected:&lt;[ab]&gt; but was:&lt;[]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[ab]&gt; but was:&lt;[]&gt;
-	at org.junit.Assert.assertEquals(Assert.java:115)
+    <failure message="java.lang.AssertionError: expected:&lt;ab&gt; but was:&lt;de&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;ab&gt; but was:&lt;de&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
 	at org.junit.Assert.assertEquals(Assert.java:144)
 	at EncryptTest.isEncrypt_ableTo_encrypt(EncryptTest.java:9)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
