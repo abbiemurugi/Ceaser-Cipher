@@ -19,11 +19,11 @@ public class App {
         String userCeaserCipher = myConsole.readLine();
         String ceaserCiphers = userCeaserCipher.toLowerCase();
 
-        if (ceaserCiphers.equals("a")) {
+        if (ceaserCiphers.equals("a")) {       //created an if statement so as to output the encrypt and decrypt separately
 
             System.out.println(encryptResult);
         }
-        else if(ceaserCiphers.equals("b")){
+        else if(ceaserCiphers.equals("b")){   //decrypt output
             System.out.println(decryptResult);
         }
         else {
