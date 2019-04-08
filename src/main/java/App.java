@@ -2,13 +2,33 @@ import java.io.Console;
 
 public class App {
     public static void main(String[] args){
-       Console myConsole = System.console();
+        CeaserCipher ceaserCipher = new CeaserCipher();
+       Console myConsole = System.console();             //able to allow user input
        System.out.println("Enter Sentence");
 
        String stringSentence = myConsole.readLine();
        System.out.println("Enter Key");
-       int intKey = Integer.parseInt(stringSentence);
+       String key = myConsole.readLine();
+       int userKey = Integer.parseInt(key);    //Changing an integer to a string
 
+        String encryptResult = CeaserCipher.isEncrypt(stringSentence, userKey);   //create an instance of encrypt class and call isEncrypt method
+        String decryptResult = CeaserCipher.runDecrypt(stringSentence,userKey);  //create an instance of decrypt class and call isDecrypt method
+
+        System.out.println("Choose A to Encrypt\nEnter B to Decrypt");
+
+        String userCeaserCipher = myConsole.readLine();
+        String ceaserCiphers = userCeaserCipher.toLowerCase();
+
+        if (ceaserCiphers.equals("a")) {
+
+            System.out.println(encryptResult);
+        }
+        else if(ceaserCiphers.equals("b")){
+            System.out.println(decryptResult);
+        }
+        else {
+            System.out.println("Invalid choice");
+        }
     }
 }
 
