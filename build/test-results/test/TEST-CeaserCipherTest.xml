@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CeaserCipherTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-04-07T23:17:43" hostname="abbiemurugi-Lenovo-V110-15ISK" time="0.002">
+<testsuite name="CeaserCipherTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-04-08T09:18:29" hostname="abbiemurugi-Lenovo-V110-15ISK" time="0.003">
   <properties/>
-  <testcase name="runDecrypt_ableTo_decrypt" classname="CeaserCipherTest" time="0.002"/>
+  <testcase name="runDecrypt_ableTo_decrypt" classname="CeaserCipherTest" time="0.003"/>
   <testcase name="isEncrypt_ableTo_encrypt" classname="CeaserCipherTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
