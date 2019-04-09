@@ -9,7 +9,6 @@ public class CeaserCipher {
             char ch = text.charAt(i);              //
             if (Character.isLetter(ch)) {
                 char x = (char) (ch + shift);
-
                 if (x > 'z') {
                     encryptedOutput += (char) (ch - (26 - shift));
 
