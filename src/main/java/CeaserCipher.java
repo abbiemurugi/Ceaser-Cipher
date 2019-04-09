@@ -3,9 +3,9 @@ import java.util.SplittableRandom;
 public class CeaserCipher {
     public static String isEncrypt(String text, int shift) {
 //        String output = new String();
-        String encryptedOutput = "";
+        String encryptedOutput = "";    //creating an empty string
 
-        for (int i = 0; i < text.length(); i++) {        //
+        for (int i = 0; i < text.length(); i++) {        //creating a loop to loop through the text
             char ch = text.charAt(i);              //
             if (Character.isLetter(ch)) {
                 char x = (char) (ch + shift);
